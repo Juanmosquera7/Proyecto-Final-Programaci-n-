@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="co.edu.uniquindio.alojamiento.controladores.BuscarAlojamientoControlador" prefWidth="800" prefHeight="500">
+    <!-- Contenedor para los filtros -->
+    <VBox layoutX="20" layoutY="20" spacing="10" prefWidth="200">
+
+        <!-- ComboBox para el tipo de alojamiento -->
+        <ComboBox fx:id="tipoAlojamiento" promptText="Tipo de Alojamiento (Casa, Apartamento, Hotel)" />
+
+        <!-- ComboBox para la ciudad -->
+        <ComboBox fx:id="ciudadAlojamiento" promptText="Ciudad" />
+
+        <!-- Filtro por precio mínimo -->
+        <TextField fx:id="precioMinimo" promptText="Precio Mínimo" />
+
+        <!-- Filtro por precio máximo -->
+        <TextField fx:id="precioMaximo" promptText="Precio Máximo" />
+
+        <!-- Botón de búsqueda -->
+        <Button fx:id="btnBuscar" text="Buscar" onAction="#buscarAlojamientos" />
+
+        <!-- Botón de reserva -->
+        <Button fx:id="btnReservar" text="Reservar" onAction="#reservarAlojamiento" />
+    </VBox>
+
+    <!-- Tabla para los resultados -->
+    <TableView fx:id="tablaAlojamientos" layoutX="250" layoutY="20" prefWidth="530" prefHeight="400">
+        <columns>
+            <TableColumn fx:id="columnaNombre" text="Nombre" prefWidth="150" />
+            <TableColumn fx:id="columnaTipo" text="Tipo" prefWidth="100" />
+            <TableColumn fx:id="columnaCiudad" text="Ciudad" prefWidth="150" />
+            <TableColumn fx:id="columnaPrecio" text="Precio" prefWidth="100" />
+        </columns>
+    </TableView>
+
+    <!-- Botón para limpiar filtros -->
+    <Button fx:id="btnLimpiar" text="Limpiar Filtros" layoutX="20" layoutY="450" onAction="#limpiarFiltros" />
+</AnchorPane>
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/javafx"
+      xmlns="http://javafx.com/javafx/16"
+      fx:controller="co.edu.uniquindio.alojamiento.controladores.EliminarOfertaControlador"
+      alignment="CENTER" spacing="20.0" prefWidth="400.0" prefHeight="300.0" style="-fx-padding: 20;">
+
+    <Label text="Eliminar Oferta" style="-fx-font-size: 20; -fx-font-weight: bold;" />
+
+    <ComboBox fx:id="comboBoxOfertas" promptText="Seleccione una oferta" prefWidth="300.0" />
+
+    <Button text="Eliminar Oferta" onAction="#eliminarOferta" style="-fx-font-size: 14; -fx-padding: 10 20;" />
+
+    <Label fx:id="mensaje" style="-fx-text-fill: red;" />
+</VBox>
+

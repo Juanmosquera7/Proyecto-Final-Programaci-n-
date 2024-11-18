@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="co.edu.uniquindio.alojamiento.controladores.EditarPerfilControlador"
+            prefHeight="600.0" prefWidth="600.0">
+
+    <VBox alignment="CENTER" spacing="20" layoutX="50" layoutY="50">
+        <Label text="Editar Perfil" style="-fx-font-size: 20;"/>
+
+        <!-- Campos de edición de perfil -->
+        <HBox spacing="10">
+            <Label text="Nombre:"/>
+            <TextField fx:id="nombreUsuario" prefWidth="200"/>
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Correo:"/>
+            <TextField fx:id="correoUsuario" prefWidth="200"/>
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Contraseña Actual:"/>
+            <PasswordField fx:id="contrasenaUsuario" prefWidth="200"/>
+        </HBox>
+
+        <!-- Nuevos campos para cambiar la contraseña -->
+        <HBox spacing="10">
+            <Label text="Nueva Contraseña:"/>
+            <PasswordField fx:id="nuevaContrasenaUsuario" prefWidth="200"/>
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Confirmar Contraseña:"/>
+            <PasswordField fx:id="confirmarContrasenaUsuario" prefWidth="200"/>
+        </HBox>
+
+        <Button text="Guardar Cambios" onAction="#guardarCambios"/>
+    </VBox>
+</AnchorPane>
+
+

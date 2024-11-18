@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Alert?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="co.edu.uniquindio.alojamiento.controladores.ReservarAlojamientoControlador">
+
+    <!-- Cédula Cliente -->
+    <Label text="Cédula Cliente:" layoutX="20" layoutY="20"/>
+    <TextField fx:id="clienteCedulaField" layoutX="150" layoutY="20" prefWidth="250" />
+
+    <!-- Ciudad (ComboBox para seleccionar ciudad) -->
+    <Label text="Ciudad:" layoutX="20" layoutY="60"/>
+    <ComboBox fx:id="ciudadComboBox" layoutX="150" layoutY="60" prefWidth="250" />
+
+    <!-- Alojamiento (ComboBox para seleccionar Alojamiento basado en ciudad) -->
+    <Label text="Alojamiento:" layoutX="20" layoutY="100"/>
+    <ComboBox fx:id="alojamientoComboBox" layoutX="150" layoutY="100" prefWidth="250" />
+
+    <!-- Fecha Inicio -->
+    <Label text="Fecha Inicio:" layoutX="20" layoutY="140"/>
+    <DatePicker fx:id="fechaInicioPicker" layoutX="150" layoutY="140" prefWidth="250" />
+
+    <!-- Fecha Fin -->
+    <Label text="Fecha Fin:" layoutX="20" layoutY="180"/>
+    <DatePicker fx:id="fechaFinPicker" layoutX="150" layoutY="180" prefWidth="250" />
+
+    <!-- Número de Huéspedes -->
+    <Label text="Huéspedes:" layoutX="20" layoutY="220"/>
+    <TextField fx:id="numHuespedesField" layoutX="150.0" layoutY="220" promptText="Número de huéspedes" />
+
+
+
+    <!-- Botón de Reservar -->
+    <Button text="Reservar" onAction="#realizarReserva" layoutX="150" layoutY="270" prefWidth="150" />
+
+</AnchorPane>
+

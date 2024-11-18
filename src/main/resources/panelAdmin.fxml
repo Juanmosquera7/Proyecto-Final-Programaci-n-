@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="co.edu.uniquindio.alojamiento.controladores.PanelAdminControlador"
+            prefHeight="600.0" prefWidth="800.0">
+
+    <!-- Barra de título del panel del administrador -->
+    <VBox alignment="CENTER" prefHeight="50.0" AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" style="-fx-background-color: #2a9df4;">
+        <Label text="Panel del Administrador" style="-fx-font-size: 24; -fx-text-fill: white;"/>
+    </VBox>
+
+    <!-- Panel de opciones del administrador -->
+    <VBox spacing="20.0" alignment="TOP_LEFT" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="50.0" style="-fx-background-color: #f0f0f0;">
+        <Button text="Gestionar Alojamientos" fx:id="btnGestionarAlojamientos" onAction="#gestionarAlojamientos"/>
+        <Button text="Ofertas Especiales" fx:id="btnOfertasEspeciales" onAction="#ofertasEspeciales"/>
+        <Button text="Estadísticas" fx:id="btnEstadisticas" onAction="#estadisticas"/>
+        <Button text="Alojamientos Populares" fx:id="btnAlojamientosPopulares" onAction="#alojamientosPopulares"/>
+
+        <Button text="Eliminar Reseña" fx:id="btneliminarResena" onAction="#eliminarResena" />
+        <Button text="Cerrar Sesión" fx:id="btnCerrarSesion" onAction="#cerrarSesion"/>
+
+        <!-- Nuevo botón para eliminar reseña -->
+
+    </VBox>
+
+    <!-- Área de contenido para mostrar información dinámica -->
+    <StackPane fx:id="contentArea" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.bottomAnchor="0.0">
+        <!-- Contenido dinámico gestionado por PanelAdminControlador -->
+        <Label text="Bienvenido al panel de administración de BookYourStay." alignment="CENTER" style="-fx-font-size: 16;"/>
+    </StackPane>
+</AnchorPane>
+
+
+
+

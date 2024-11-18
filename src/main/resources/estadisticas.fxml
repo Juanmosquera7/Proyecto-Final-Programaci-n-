@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="co.edu.uniquindio.alojamiento.controladores.EstadisticasControlador"
+            prefHeight="600.0" prefWidth="800.0">
+
+    <VBox alignment="CENTER" spacing="20" layoutX="50" layoutY="50">
+        <Label text="Estadísticas de Alojamientos" style="-fx-font-size: 20;"/>
+
+        <!-- Gráficos de estadística -->
+        <TabPane prefWidth="700" prefHeight="500">
+            <Tab text="Ocupación">
+                <BarChart fx:id="ocupacionChart" title="Ocupación por Alojamiento">
+                    <xAxis>
+                        <CategoryAxis label="Alojamientos"/>
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis label="Porcentaje"/>
+                    </yAxis>
+                </BarChart>
+            </Tab>
+            <Tab text="Ganancias">
+                <PieChart fx:id="gananciasChart" title="Ganancias Totales por Alojamiento"/>
+            </Tab>
+        </TabPane>
+    </VBox>
+</AnchorPane>
+

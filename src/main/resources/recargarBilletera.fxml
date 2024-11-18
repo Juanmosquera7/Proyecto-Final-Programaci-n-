@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="co.edu.uniquindio.alojamiento.controladores.RecargarBilleteraControlador"
+            prefHeight="600.0" prefWidth="600.0">
+
+    <VBox alignment="CENTER" spacing="20" layoutX="50" layoutY="50">
+        <Label text="Recargar Billetera" style="-fx-font-size: 20;"/>
+
+        <!-- Campo para ingresar la cédula del cliente -->
+        <HBox spacing="10">
+            <Label text="Cédula del Cliente:"/>
+            <TextField fx:id="cedulaTextField" prefWidth="200"/>
+        </HBox>
+
+        <!-- Campo para consultar el saldo actual -->
+        <HBox spacing="10">
+            <Label text="Saldo Actual:"/>
+            <Label fx:id="saldoActual" text="0.0" prefWidth="200"/>
+        </HBox>
+
+        <!-- Campos para recargar -->
+        <HBox spacing="10">
+            <Label text="Monto a Recargar:"/>
+            <TextField fx:id="montoRecarga" prefWidth="200"/>
+        </HBox>
+
+        <!-- Botón para recargar la billetera -->
+        <Button fx:id="btnRecargar" text="Recargar" onAction="#recargarBilletera"/>
+    </VBox>
+</AnchorPane>
+
+
+

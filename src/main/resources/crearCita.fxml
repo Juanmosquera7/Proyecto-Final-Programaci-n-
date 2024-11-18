@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="co.edu.uniquindio.alojamiento.controladores.CrearCitaControlador">
+    <children>
+
+        <ComboBox fx:id="comboPacientes" onAction="#manejarPacienteSeleccionado" layoutX="20.0" layoutY="20.0" prefWidth="200.0" promptText="Seleccione un paciente" />
+
+
+        <ComboBox fx:id="comboServicios" layoutX="20.0" layoutY="60.0" prefWidth="200.0" promptText="Seleccione un servicio" />
+
+
+        <DatePicker fx:id="campoFecha" layoutX="20.0" layoutY="100.0" promptText="Seleccione la fecha" />
+
+
+        <ComboBox fx:id="comboHora" layoutX="20.0" layoutY="140.0" prefWidth="200.0" promptText="Seleccione una hora" />
+
+
+        <Button fx:id="btnCrearCita" text="Crear Cita" layoutX="20.0" layoutY="180.0" onAction="#crearCita" />
+    </children>
+</AnchorPane>
+
+
+
+

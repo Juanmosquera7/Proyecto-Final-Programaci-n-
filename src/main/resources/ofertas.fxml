@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      spacing="20.0"
+      fx:controller="co.edu.uniquindio.alojamiento.controladores.OfertasControlador">
+
+    <Label text="Lista de Ofertas Especiales" textFill="#0f0f0f">
+        <font>
+            <Font size="20.0"/>
+        </font>
+    </Label>
+
+    <TableView fx:id="tablaOfertas" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="colAlojamiento" text="Alojamiento" />
+
+            <TableColumn fx:id="colFechaInicio" text="Fecha de Inicio" />
+            <TableColumn fx:id="colFechaFin" text="Fecha de Fin" />
+            <TableColumn fx:id="colDescuento" text="Descuento (%)" />
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+    </TableView>
+
+</VBox>
+
+

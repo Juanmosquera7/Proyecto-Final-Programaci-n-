@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+
+<VBox spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      style="-fx-padding: 30px"
+      fx:controller="co.edu.uniquindio.alojamiento.controladores.CancelarCitaControlador">
+
+    <Label text="Cancelar Cita" style="-fx-font-size: 20;" />
+    <ComboBox fx:id="comboCitas" prefWidth="300.0" />
+    <Button text="Eliminar Cita" onAction="#eliminarCita" />
+
+</VBox>
+

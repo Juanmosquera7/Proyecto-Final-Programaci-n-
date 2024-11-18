@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="co.edu.uniquindio.alojamiento.controladores.PanelClienteControlador"
+            prefHeight="600.0" prefWidth="800.0">
+
+    <!-- Barra de título del panel del cliente -->
+    <VBox alignment="CENTER" prefHeight="50.0" AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" style="-fx-background-color: #2a9df4;">
+        <Label text="Panel del Cliente" style="-fx-font-size: 24; -fx-text-fill: white;"/>
+    </VBox>
+
+    <!-- Panel de opciones del cliente -->
+    <VBox spacing="20.0" alignment="TOP_LEFT" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="50.0" style="-fx-background-color: #f0f0f0;">
+        <Button text="Buscar Alojamiento" fx:id="btnBuscarAlojamiento" onAction="#buscarAlojamiento"/>
+        <Button text="Mis Reservas" fx:id="btnMisReservas" onAction="#verMisReservas"/>
+        <Button text="Añadir Reseña" fx:id="btnAnadirResena" onAction="#AnadirResena" />
+        <Button text="Recargar Billetera" fx:id="btnRecargarBilletera" onAction="#recargarBilletera"/>
+        <Button text="Editar Perfil" fx:id="btnEditarPerfil" onAction="#editarPerfil"/>
+        <Button text="Cerrar Sesión" fx:id="btnCerrarSesion" onAction="#cerrarSesion"/>
+    </VBox>
+
+    <!-- Área de contenido para mostrar información dinámica (por ejemplo, lista de alojamientos) -->
+    <StackPane fx:id="contentArea" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.bottomAnchor="0.0">
+        <!-- Este contenedor cambiará su contenido dinámicamente -->
+        <Label text="Bienvenido al panel de cliente de BookYourStay." alignment="CENTER" style="-fx-font-size: 16;"/>
+    </StackPane>
+</AnchorPane>
+

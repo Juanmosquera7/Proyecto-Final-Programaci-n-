@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="co.edu.uniquindio.alojamiento.controladores.CrearAlojamientoControlador"
+            prefWidth="600.0" prefHeight="550.0">
+
+    <children>
+        <!-- Título -->
+        <Label text="Crear Alojamiento" layoutX="200.0" layoutY="20.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+
+        <!-- Nombre del alojamiento -->
+        <Label text="Nombre:" layoutX="50.0" layoutY="70.0" />
+        <TextField fx:id="nombreAlojamiento" layoutX="150.0" layoutY="70.0" prefWidth="300.0" />
+
+        <!-- Ciudad -->
+        <Label text="Ciudad:" layoutX="50.0" layoutY="110.0" />
+        <TextField fx:id="ciudadAlojamiento" layoutX="150.0" layoutY="110.0" prefWidth="300.0" />
+
+        <!-- Descripción -->
+        <Label text="Descripción:" layoutX="50.0" layoutY="150.0" />
+        <TextArea fx:id="descripcionAlojamiento" layoutX="150.0" layoutY="150.0" prefWidth="300.0" prefHeight="80.0" />
+
+        <!-- URL de Imagen -->
+        <Label text="URL de Imagen:" layoutX="50.0" layoutY="250.0" />
+        <TextField fx:id="imagenUrl" layoutX="150.0" layoutY="250.0" prefWidth="300.0" />
+
+        <!-- Precio por Noche -->
+        <Label text="Precio por Noche:" layoutX="50.0" layoutY="290.0" />
+        <TextField fx:id="precioPorNoche" layoutX="150.0" layoutY="290.0" prefWidth="300.0" />
+
+        <!-- Capacidad Máxima -->
+        <Label text="Capacidad Máxima:" layoutX="50.0" layoutY="330.0" />
+        <Spinner fx:id="capacidadMaxima" layoutX="150.0" layoutY="330.0" prefWidth="100.0" />
+
+        <!-- Tipo de Alojamiento -->
+        <Label text="Tipo de Alojamiento:" layoutX="50.0" layoutY="370.0" />
+        <ComboBox fx:id="tipoAlojamiento" layoutX="150.0" layoutY="370.0" prefWidth="150.0" />
+
+        <!-- Servicios -->
+        <Label text="Servicios:" layoutX="50.0" layoutY="410.0" />
+        <HBox layoutX="150.0" layoutY="410.0" spacing="10.0">
+            <CheckBox fx:id="servicioPiscina" text="Piscina" />
+            <CheckBox fx:id="servicioWifi" text="WiFi" />
+            <CheckBox fx:id="servicioDesayuno" text="Desayuno" />
+            <CheckBox fx:id="servicioGimnasio" text="Gimnasio" />
+            <CheckBox fx:id="servicioAireAcondicionado" text="Aire Acondicionado" />
+            <CheckBox fx:id="servicioParqueadero" text="Parqueadero" />
+        </HBox>
+
+        <!-- Botones -->
+        <HBox layoutX="200.0" layoutY="470.0" spacing="20.0">
+            <Button fx:id="btnGuardar" text="Guardar" onAction="#guardarAlojamiento" prefWidth="100.0" />
+            <Button fx:id="btnCancelar" text="Cancelar"  prefWidth="100.0" />
+        </HBox>
+    </children>
+
+
+</AnchorPane>
+

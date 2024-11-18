@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Pos?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="co.edu.uniquindio.alojamiento.controladores.EliminarAlojamientoControlador"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <!-- Barra de título -->
+    <VBox alignment="CENTER" prefHeight="50.0" AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" style="-fx-background-color: #2a9df4;">
+        <Label text="Eliminar Alojamiento" style="-fx-font-size: 24; -fx-text-fill: white;"/>
+    </VBox>
+
+    <!-- Contenido principal -->
+    <VBox alignment="CENTER" spacing="20.0" AnchorPane.topAnchor="70.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+
+        <!-- Etiqueta para el ComboBox -->
+        <Label text="Seleccione el alojamiento que desea eliminar:" style="-fx-font-size: 16;"/>
+
+        <!-- ComboBox para mostrar los alojamientos -->
+        <ComboBox fx:id="cmbAlojamientos" prefWidth="400.0"/>
+
+        <!-- Botón para eliminar el alojamiento -->
+        <Button text="Eliminar Alojamiento" fx:id="btnEliminar" onAction="#eliminarAlojamiento" style="-fx-font-size: 16; -fx-background-color: #f04e23; -fx-text-fill: white;"/>
+
+    </VBox>
+
+</AnchorPane>

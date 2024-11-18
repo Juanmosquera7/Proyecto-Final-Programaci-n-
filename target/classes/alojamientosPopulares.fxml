@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="co.edu.uniquindio.alojamiento.controladores.AlojamientosPopularesControlador">
+    <children>
+        <!-- Gráfico de barras -->
+        <BarChart fx:id="graficoBarras" prefHeight="400.0" prefWidth="600.0" layoutX="20.0" layoutY="20.0">
+            <!-- Ejes del gráfico -->
+            <xAxis>
+                <CategoryAxis fx:id="ejeX" label="Ciudades"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="ejeY" label="Número de Reservas" autoRanging="true"/>
+            </yAxis>
+        </BarChart>
+    </children>
+</AnchorPane>
+
+

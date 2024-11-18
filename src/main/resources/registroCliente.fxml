@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      spacing="30.0"
+      alignment="CENTER"
+      prefWidth="800"
+      prefHeight="600"
+      fx:controller="co.edu.uniquindio.alojamiento.controladores.RegistroClienteControlador"
+      style="-fx-padding: 50;">
+
+
+    <HBox alignment="CENTER">
+        <ImageView fx:id="logoUsuario" fitWidth="100.0" fitHeight="100.0" preserveRatio="true"/>
+    </HBox>
+
+
+    <Label text="Registro de Cliente" textFill="#0f0f0f" style="-fx-font-size: 30;">
+        <font>
+            <Font size="30.0"/>
+        </font>
+    </Label>
+
+
+    <HBox spacing="20.0" alignment="CENTER">
+        <Label text="Cédula:" style="-fx-font-size: 18;" />
+        <TextField fx:id="campoCedula" promptText="Cédula del Cliente" style="-fx-font-size: 18;" prefWidth="300"/>
+    </HBox>
+
+    <HBox spacing="20.0" alignment="CENTER">
+        <Label text="Nombre Completo:" style="-fx-font-size: 18;" />
+        <TextField fx:id="campoNombre" promptText="Nombre Completo" style="-fx-font-size: 18;" prefWidth="300"/>
+    </HBox>
+
+    <HBox spacing="20.0" alignment="CENTER">
+        <Label text="Teléfono:" style="-fx-font-size: 18;" />
+        <TextField fx:id="campoTelefono" promptText="Teléfono del Cliente" style="-fx-font-size: 18;" prefWidth="300"/>
+    </HBox>
+
+    <HBox spacing="20.0" alignment="CENTER">
+        <Label text="Correo:" style="-fx-font-size: 18;" />
+        <TextField fx:id="campoCorreo" promptText="Correo Electrónico" style="-fx-font-size: 18;" prefWidth="300"/>
+    </HBox>
+
+    <HBox spacing="20.0" alignment="CENTER">
+        <Label text="Contraseña:" style="-fx-font-size: 18;" />
+        <PasswordField fx:id="campoContrasena" promptText="Contraseña" style="-fx-font-size: 18;" prefWidth="300"/>
+    </HBox>
+
+    <Button text="Registrar Cliente" style="-fx-font-size: 18;" prefWidth="200" onAction="#registrarCliente"/>
+</VBox>
+
+

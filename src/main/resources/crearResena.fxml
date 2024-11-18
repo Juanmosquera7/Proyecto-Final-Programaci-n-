@@ -1,0 +1,25 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="co.edu.uniquindio.alojamiento.controladores.CrearResenaControlador">
+
+    <Label text="Alojamientos Reservados" />
+    <ComboBox fx:id="comboAlojamientos" />
+
+    <Label text="Comentario" />
+    <TextArea fx:id="txtComentario" />
+
+    <!-- TextField para la valoración -->
+    <Label text="Valoración (1 a 5)" />
+    <TextField fx:id="txtValoracion" promptText="Ingresa un número del 1 al 5" />
+
+    <!-- Botones con sus fx:id -->
+    <Button fx:id="btnGuardarResena" text="Guardar Reseña" onAction="#manejarGuardarResena" />
+    <Button fx:id="btnCancelar" text="Cancelar" onAction="#manejarCancelar" />
+</VBox>
+

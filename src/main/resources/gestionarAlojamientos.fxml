@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="co.edu.uniquindio.alojamiento.controladores.GestionarAlojamientosControlador"
+            prefHeight="600.0" prefWidth="800.0">
+
+    <!-- Barra de título del panel de gestión de alojamientos -->
+    <VBox alignment="CENTER" prefHeight="50.0" AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" style="-fx-background-color: #2a9df4;">
+        <Label text="Gestión de Alojamientos" style="-fx-font-size: 24; -fx-text-fill: white;"/>
+    </VBox>
+
+    <!-- Panel de opciones de gestión -->
+    <VBox alignment="CENTER" spacing="20.0" prefWidth="200.0" AnchorPane.topAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.bottomAnchor="50.0" style="-fx-background-color: #f0f0f0;">
+        <Button text="Crear Alojamiento" fx:id="btnCrearAlojamiento" onAction="#crearAlojamiento"/>
+        <Button text="Eliminar Alojamiento" fx:id="btnEliminarAlojamiento" onAction="#eliminarAlojamiento"/>
+    </VBox>
+
+    <!-- Área de contenido para mostrar información dinámica -->
+    <StackPane fx:id="contentArea" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.bottomAnchor="0.0" focusTraversable="false">
+        <Label text="Seleccione una opción de gestión." alignment="CENTER" style="-fx-font-size: 16;"/>
+    </StackPane>
+
+</AnchorPane>
+
+
+
+
